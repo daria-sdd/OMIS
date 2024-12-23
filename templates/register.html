@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e9ecf3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 600px;
+            background-color: #f4f6fc;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: #8a9ebd;
+            margin: 10px 0 20px 0;
+        }
+        h1 {
+            font-size: 24px;
+            color: #5a6a8f;
+            margin: 0 0 20px 0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .form-left {
+            width: 45%;
+        }
+        .form-left .input-group {
+            margin: 10px 0;
+        }
+        .form-left input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #a0b3d1;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        .form-right {
+            width: 45%;
+            text-align: center;
+        }
+        .form-right img {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .form-right input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #a0b3d1;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        .button {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .button button {
+            padding: 10px 20px;
+            background-color: #6c7ba3;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button button:hover {
+            background-color: #505f87;
+        }
+        .footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer button {
+            padding: 10px 15px;
+            background-color: #6c7ba3;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .footer button:hover {
+            background-color: #505f87;
+        }
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <div class="line"></div>
+        <form action="/register" method="POST">
+            <div class="form-container">
+                <div class="form-left">
+                    <div class="input-group">
+                        <label>Электронная почта<span class="required">*</span></label>
+                        <input type="email" name="email" placeholder="Введите вашу почту" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Имя<span class="required">*</span></label>
+                        <input type="text" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Пароль<span class="required">*</span></label>
+                        <input type="password" name="password" placeholder="Введите пароль" required>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <label>Фото профиля</label>
+                    <img src="avatar-placeholder.png" alt="Фото профиля">
+                    <input type="text" name="profile_info" placeholder="Информация о профиле">
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="window.location.href='/profile'">Продолжить</button>
+            </div>
+        </form>
+        <div class="line"></div>
+        <div class="footer">
+            <button onclick="window.location.href='/'">Вход</button>
+            <button onclick="window.location.href='/register'">Регистрация</button>
+            <button onclick="window.location.href='/friend'">Продолжить как гость</button>
+        </div>
+    </div>
+</body>
+</html>

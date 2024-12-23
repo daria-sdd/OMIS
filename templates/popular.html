@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Популярное</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        .header {
+            background-color: #5a7dab;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .menu {
+            width: 200px;
+            background-color: #d2dae6;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .menu h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .menu a {
+            display: block;
+            color: #444;
+            text-decoration: none;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .feed-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feed-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #5a7dab;
+        }
+        .feed-item p {
+            margin: 5px 0;
+            color: #333;
+        }
+        .feed-item .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            color: #666;
+        }
+        .feed-item .actions span {
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .feed-item .actions span:hover {
+            text-decoration: underline;
+        }
+        .feed-item .actions .date {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Профиль</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div>
+            <span>🔔</span>
+            <span>👤</span>
+        </div>
+    </div>
+    <div class="menu">
+        <button onclick="window.location.href='/popular'">Популярное</button>
+        <a href="#">Моя Лента</a>
+        <a href="#">Подписки</a>
+        <a href="#">Вид услуги</a>
+        <a href="#">Теги</a>
+    </div>
+    <div class="content">
+        <div class="feed-item">
+            <h3>Название блога</h3>
+            <p><strong>Заголовок:</strong></p>
+            <p>Теееееееееееееееееееееееееееееееееееекст</p>
+            <div class="actions">
+                <span>❤</span>
+                <span>💬</span>
+                <span>🔗</span>
+                <span class="date">Дата</span>
+            </div>
+            <button onclick="window.location.href='/blog'">Больше</button>
+        </div>
+        <div class="feed-item">
+            <h3>Название блога</h3>
+            <p><strong>Заголовок:</strong></p>
+            <p>Теееееееееееееееееееееееееееееееееееекст</p>
+            <div class="actions">
+                <span>❤</span>
+                <span>💬</span>
+                <span>🔗</span>
+                <span class="date">Дата</span>
+            </div>
+            <button onclick="window.location.href='/blog'">Больше</button>
+        </div>
+    </div>
+</body>
+</html>
+

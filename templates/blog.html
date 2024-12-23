@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecf3;
+            color: #333;
+        }
+        .header {
+            background-color: #637ba7;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .menu {
+            width: 200px;
+            background-color: #d2dae6;
+            height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+        }
+        .menu h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .menu a {
+            display: block;
+            color: #444;
+            text-decoration: none;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .profile-header {
+            background-color: #dde3ef;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-header .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+        .profile-header .info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .profile-header .info h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+        .profile-header .info p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .blog-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .blog-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #637ba7;
+        }
+        .blog-section .blog-content {
+            padding: 10px;
+            background-color: #f5f7fc;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Профиль</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div>
+            <span>🔔</span>
+            <span>👤</span>
+        </div>
+    </div>
+    <div class="menu">
+        <button onclick="window.location.href='/popular'">Популярное</button>
+        <a href="#">Моя Лента</a>
+        <a href="#">Подписки</a>
+        <a href="#">Вид услуги</a>
+        <a href="#">Теги</a>
+    </div>
+    <div class="content">
+        <div class="profile-header">
+            <div class="avatar"></div>
+            <div class="info">
+                <h2>Название блога</h2>
+                <p>Описание:</p>
+                <p>__________________________</p>
+                <p>Автор</p>
+            </div>
+            <div class="extra-info">
+                <h3>Вид услуг</h3>
+            </div>
+        </div>
+        <div class="blog-section">
+            <h3>Название блога</h3>
+            <p><strong>Заголовок:</strong></p>
+            <div class="blog-content">
+                Теееееееееееееееееееееееееееееееееееекст
+            </div>
+        </div>
+    </div>
+</body>

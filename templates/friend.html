@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #7785a9;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .search-bar input {
+            padding: 5px;
+            font-size: 14px;
+        }
+        .menu {
+            width: 200px;
+            background-color: #dce1eb;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+        }
+        .menu button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #7785a9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .menu button:hover {
+            background-color: #667396;
+        }
+        .menu a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .profile {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile .avatar {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .profile .info h2 {
+            margin: 0;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .profile .info p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .profile .actions button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #7785a9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .profile .actions button:hover {
+            background-color: #667396;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Профиль</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div class="icons">
+            <span>🔔</span>
+            <span>👤</span>
+        </div>
+    </div>
+    <div class="menu">
+        <button onclick="window.location.href='/popular'">Популярное</button>
+        <a href="#">Моя Лента</a>
+        <a href="#">Подписки</a>
+        <a href="#">Вид услуги</a>
+        <a href="#">Теги</a>
+    </div>
+    <div class="content">
+        <div class="profile">
+            <div class="avatar"></div>
+            <div class="info">
+                <h2>Имя пользователя</h2>
+                <p>Описание</p>
+                <p>____________________________</p>
+                <p>____________________________</p>
+                <p>____________________________</p>
+            </div>
+            <div class="actions">
+                <button onclick="window.location.href='/chats'">Сообщение</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
